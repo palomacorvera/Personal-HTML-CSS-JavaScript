@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root {
+    --verde: #318162;
+    --gris: rgb(180, 180, 180);
+    --negro: #132f3a;
+    --blanco: #fef8f0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    height: 100%;
+    background: url('img/fondoHome.webp') no-repeat center center/cover;
+}
+
+#navegador-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+
+#navegador-principal .logo a {
+    color: var(--negro);
+}
+
+#navegador-principal div ul {
+    display: flex;
+}
+
+#navegador-principal div ul li {
+    display: block;
+    margin-right: 1.5rem;
+    color: var(--negro);
+}
+
+#navegador-principal div ul li a {
+    text-decoration: none;
+    color: var(--negro);
+    margin: 0.5rem;
+    border-bottom: 3px transparent solid;
+    padding-bottom: -5rem;
+    transition: border-color 0.5s;
+}
+
+#navegador-principal div ul li .activo {
+    border-color: var(--verde);
+}
+
+#navegador-principal div ul li a:hover {
+    border-color: var(--gris);
+}
+
+#navegador-principal div ul li i {
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+}
+
+#escaparate .contenedor {
+    display: flex;
+}
+
+#escaparate .contenedor div {
+    width: 50%;
+}
+
+#escaparate .contenedor .contenido-escaparate {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    margin: 4rem;
+}
+
+#escaparate .contenedor .contenido-escaparate h1 {
+    font-size: 4rem;
+    color: var(--negro);
+}
+
+#escaparate .contenedor .contenido-escaparate p {
+    margin: 2rem 0;
+    color: var(--gris);
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+#escaparate .contenedor .contenido-escaparate p small {
+    font-size: 0.8rem;
+}
+
+#escaparate .contenedor .contenido-escaparate .botones {
+    display: flex;
+    justify-content: left;
+    margin-bottom: -25px;
+    width: 55%;
+}
+
+#escaparate .contenedor .contenido-escaparate .botones i {
+    color: var(--verde);
+}
+
+#escaparate .contenedor .contenido-escaparate .botones .boton a {
+    text-align: center;
+    font-size: 16px;
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+#escaparate .contenedor .contenido-escaparate .botones .boton {
+    border: none;
+    padding: 1rem 2rem;
+    background-color: var(--verde);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    margin-right: 1rem;
+}
+
+#escaparate .contenedor .contenido-escaparate .botones .boton-blanco {
+    background: none;
+}
+
+#escaparate .contenedor .contenido-escaparate .botones .boton-blanco a {
+    color: var(--negro);
+}
+
+#escaparate .contenedor .contenido-escaparate .botones .boton:hover {
+    background-color: var(--gris);
+}
+
+#pie-principal {
+    padding: 4rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    text-align: left;
+}
+
+#pie-principal .redes i {
+    color: var(--negro);
+    margin-right: 1rem;
+}
